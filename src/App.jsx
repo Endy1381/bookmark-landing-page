@@ -1,29 +1,19 @@
-import Test from './test';
-import './App.css';
-import { useState } from 'react';
-
-
 
 function App() {
-    const [datas, setDatas] = useState([
-        {name: 'hal', age: 2, id: 1},
-        {name: 'hol', age: 4, id: 2},
-        {name: 'dal', age: 6, id: 3}
-    ])
-
-    const handleClick = () => {
-        setDatas(datas[0].age = 8)
-    }
-
     return (
-        <>
-            <h1 className="text-blue-800">haloo</h1>
-            {datas.map((data) => {return(
-                // eslint-disable-next-line react/jsx-key
-                <Test name={data.name} age={data.age}/>
-            )})}
-            <button onClick={handleClick}> click me</button>
-        </>
+        <div className="mx-32 mt-10">
+            <header>
+                <nav className="flex justify-between items-center">
+                    <img src="../images/logo-bookmark.svg" alt=""/>
+                    <ul className="inline-flex items-center">
+                        <a href="#" className="px-5 text-blue-950 hover:text-red-900">FEATURES</a>
+                        <a href="#" className="px-5 text-blue-950 hover:text-red-900">PRICING</a>
+                        <a href="#" className="px-5 text-blue-950 hover:text-red-900">CONTACT</a>
+                        <a href="#" className="px-5 py-3 text-white bg-red-500 rounded-2xl border border-red-500 hover:text-red-500 hover:bg-white">LOGIN</a>
+                    </ul>
+                </nav>
+            </header>
+        </div>
     );
 }
 
