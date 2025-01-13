@@ -23,8 +23,8 @@ function App() {
         case 2:
             img = img2;
             header = "Intelligent search";
-            p = "Easily share your bookmarks and collections with others. Create a shareable \n" +
-                "  link that you can send at the click of a button."
+            p = "Our powerful search feature will help you find saved sites in no time at all. \n" +
+                "  No need to trawl through all of your bookmarks."
             break;
         case 3:
             img = img3;
@@ -59,7 +59,7 @@ function App() {
                         <a href="#" className="px-5 text-blue-950 hover:text-red-900">CONTACT</a>
                         <a
                             href="#"
-                            className="px-5 py-3 text-white bg-red-500 border shadow-2xl border-red-500 hover:text-red-500 hover:bg-white"
+                            className="px-5 py-3 rounded-md text-white bg-red-500 border shadow-2xl border-red-500 hover:text-red-500 hover:bg-white"
                         >
                             LOGIN
                         </a>
@@ -80,13 +80,13 @@ function App() {
                     <div className="flex">
                         <a
                             href="#"
-                            className="px-5 py-3 mr-4 shadow-2xl shadow-blue-200 text-white bg-blue-700 border border-blue-700 hover:text-blue-700 hover:bg-white"
+                            className="px-5 py-3 mr-4 rounded-md shadow-2xl shadow-blue-200 text-white bg-blue-700 border border-blue-700 hover:text-blue-700 hover:bg-white"
                         >
                             Get it on Chrome
                         </a>
                         <a
                             href="#"
-                            className="px-5 py-3 shadow-2xl text-gray-900 bg-gray-100 hover:border hover:border-gray-900 hover:text-gray-900 hover:bg-white"
+                            className="px-5 py-3 rounded-md shadow-2xl text-gray-900 bg-gray-100 hover:border hover:border-gray-900 hover:text-gray-900 hover:bg-white"
                         >
                             Get it on Firefox
                         </a>
@@ -99,7 +99,7 @@ function App() {
             </section>
 
             {/* Section 2 features */}
-            <section>
+            <section className="mb-32">
                 <div className="flex flex-col justify-center items-center ">
                     <h1 className="text-4xl text-blue-950 font-bold mb-5">Features</h1>
                     <p className="text-center text-gray-700 mb-6">
@@ -110,24 +110,24 @@ function App() {
                 <div className="flex justify-between items-center mx-52 mb-10">
                     <button
                         onClick={state1}
-                        className={`flex-1 text-center px-5 py-3 hover:text-red-500 ${
-                            state === 1 ? 'border-b-4 border-red-500' : ''
+                        className={`flex-1 text-center px-5 py-3 rounded-md hover:text-red-500 ${
+                            state === 1 ? 'border-b-4 rounded-md border-red-500' : ''
                         }`}
                     >
                         Simple Bookmarking
                     </button>
                     <button
                         onClick={state2}
-                        className={`flex-1 text-center px-5 py-3 hover:text-red-500 ${
-                            state === 2 ? 'border-b-4 border-red-500' : ''
+                        className={`flex-1 text-center px-5 py-3 rounded-md hover:text-red-500 ${
+                            state === 2 ? 'border-b-4 rounded-md border-red-500' : ''
                         }`}
                     >
                         Speedy Searching
                     </button>
                     <button
                         onClick={state3}
-                        className={`flex-1 text-center px-5 py-3 hover:text-red-500 ${
-                            state === 3 ? 'border-b-4 border-red-500' : ''
+                        className={`flex-1 text-center px-5 rounded-md py-3 hover:text-red-500 ${
+                            state === 3 ? 'border-b-4 rounded-md border-red-500' : ''
                         }`}
                     >
                         Easy Sharing
@@ -141,12 +141,66 @@ function App() {
                         <p className="text-gray-600 my-5 mb-5">{p}</p>
                         <a
                             href="#"
-                            className="px-5 py-3 mr-4 shadow-2xl shadow-blue-200 text-white bg-blue-700 border border-blue-700 hover:text-blue-700 hover:bg-white"
+                            className="px-5 rounded-md py-3 mr-4 shadow-2xl shadow-blue-200 text-white bg-blue-700 border border-blue-700 hover:text-blue-700 hover:bg-white"
                         >
                             More Info
                         </a>
                     </div>
                 </div>
+            </section>
+
+        {/*  section-3  */}
+            <section className="mb-32">
+                <div className="flex flex-col justify-center items-center ">
+                    <h1 className="text-4xl text-blue-950 font-bold mb-5">Download the extension</h1>
+                    <p className="text-center text-gray-700 mb-6">
+                        We’ve got more browsers in the pipeline. Please do let us know if <br/> you’ve
+                        got a favourite you’d like us to prioritize.
+                    </p>
+                </div>
+                {/*card container*/}
+                <div className="flex mx-48">
+                    {/*  card1  */}
+                    <div className="flex-1 lg:h-2/3 flex flex-col justify-center items-center rounded-md mx-2  py-8  shadow-gray-200 shadow-2xl ">
+                        <img src="../images/logo-chrome.svg" className="mb-5" alt=""/>
+                        <h1 className="text-2xl font-bold text-blue-950">Add to Chrome</h1>
+                        <p className="text-gray-500 mb-12">Minimum version 62</p>
+                        <img src="../images/bg-dots.svg" alt="" className="mb-5" />
+                        <a
+                            href="#"
+                            className="rounded-md px-5 py-3 mr-4 shadow-2xl shadow-blue-200 text-white bg-blue-700 border border-blue-700 hover:text-blue-700 hover:bg-white"
+                        >
+                            Add & Install Extension
+                        </a>
+                    </div>
+                    {/*  card2  */}
+                    <div className=" flex-1 lg:h-96 lg:mt-10  flex flex-col justify-center items-center rounded-md mx-2   py-8 shadow-gray-200 shadow-2xl ">
+                        <img src="../images/logo-firefox.svg" className="mb-5" alt=""/>
+                        <h1 className="text-2xl font-bold text-blue-950">Add to Firefox</h1>
+                        <p className="text-gray-500 mb-12">Minimum version 55</p>
+                        <img src="../images/bg-dots.svg" alt="" className="mb-5" />
+                        <a
+                            href="#"
+                            className="rounded-md px-5 py-3 mr-4 shadow-2xl shadow-blue-200 text-white bg-blue-700 border border-blue-700 hover:text-blue-700 hover:bg-white"
+                        >
+                            Add & Install Extension
+                        </a>
+                    </div>
+                    {/*  card3  */}
+                    <div className="flex-1 lg:mt-20 flex flex-col justify-center items-center rounded-md mx-2   py-8 shadow-gray-200 shadow-2xl ">
+                        <img src="../images/logo-opera.svg" className="mb-5" alt=""/>
+                        <h1 className="text-2xl font-bold text-blue-950">Add to Opera</h1>
+                        <p className="text-gray-500 mb-12">Minimum version 46</p>
+                        <img src="../images/bg-dots.svg" alt="" className="mb-5" />
+                        <a
+                            href="#"
+                            className="rounded-md px-5 py-3 mr-4 shadow-2xl shadow-blue-200 text-white bg-blue-700 border border-blue-700 hover:text-blue-700 hover:bg-white"
+                        >
+                            Add & Install Extension
+                        </a>
+                    </div>
+                </div>
+
             </section>
         </div>
     );
