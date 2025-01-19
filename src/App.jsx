@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import {browser} from "globals";
+
 
 function App() {
     // Declare state first
@@ -52,7 +52,7 @@ function App() {
         <div className="mx-32 mt-10">
             <header className="mb-20">
                 <nav className="flex justify-between items-center">
-                    <img src="/images/logo-bookmark.svg" alt="" />
+                    <img src="/images/logo-bookmark.svg" alt=""/>
                     <ul className="inline-flex items-center">
                         <a href="#" className="px-5 text-blue-950 hover:text-red-900">FEATURES</a>
                         <a href="#" className="px-5 text-blue-950 hover:text-red-900">PRICING</a>
@@ -71,10 +71,10 @@ function App() {
             <section className="flex justify-between items-center mb-20">
                 <div className="flex-1 flex flex-col">
                     <div className="mb-4">
-                        <h1 className="text-5xl mb-4 text-blue-950 font-bold">A Simple Bookmark <br /> Manager</h1>
+                        <h1 className="text-5xl mb-4 text-blue-950 font-bold">A Simple Bookmark <br/> Manager</h1>
                         <p className="text-gray-600">
-                            A clean and simple interface to organize your favourite <br /> websites. Open a new browser
-                            tab and see your sites load <br /> instantly. Try it for free.
+                            A clean and simple interface to organize your favourite <br/> websites. Open a new browser
+                            tab and see your sites load <br/> instantly. Try it for free.
                         </p>
                     </div>
                     <div className="flex">
@@ -94,7 +94,7 @@ function App() {
                 </div>
 
                 <div className="flex-1">
-                    <img src="/images/illustration-hero.svg" alt="" />
+                    <img src="/images/illustration-hero.svg" alt=""/>
                 </div>
             </section>
 
@@ -103,8 +103,8 @@ function App() {
                 <div className="flex flex-col justify-center items-center ">
                     <h1 className="text-4xl text-blue-950 font-bold mb-5">Features</h1>
                     <p className="text-center text-gray-700 mb-6">
-                        Our aim is to make it quick and easy for you to access your <br /> favourite websites. Your
-                        bookmarks sync between your devices <br /> so you can access them on the go.
+                        Our aim is to make it quick and easy for you to access your <br/> favourite websites. Your
+                        bookmarks sync between your devices <br/> so you can access them on the go.
                     </p>
                 </div>
                 <div className="flex justify-between items-center mx-52 mb-10">
@@ -135,7 +135,7 @@ function App() {
                 </div>
 
                 <div className="flex justify-between items-center mx-32 mb-20">
-                    <img className="flex-1 mx-10" width="200px" src={img} alt="" />
+                    <img className="flex-1 mx-10" width="200px" src={img} alt=""/>
                     <div className="flex-1 mx-10">
                         <h2 className="text-4xl font-bold my-5 text-blue-950">{header}</h2>
                         <p className="text-gray-600 my-5 mb-5">{p}</p>
@@ -149,7 +149,7 @@ function App() {
                 </div>
             </section>
 
-        {/*  section-3  */}
+            {/*  section-3  */}
             <section className="mb-32">
                 <div className="flex flex-col justify-center items-center ">
                     <h1 className="text-4xl text-blue-950 font-bold mb-5">Download the extension</h1>
@@ -161,11 +161,12 @@ function App() {
                 {/*card container*/}
                 <div className="flex mx-48">
                     {/*  card1  */}
-                    <div className="flex-1 lg:h-2/3 flex flex-col justify-center items-center rounded-md mx-2  py-8  shadow-gray-200 shadow-2xl ">
+                    <div
+                        className="flex-1 lg:h-2/3 flex flex-col justify-center items-center rounded-md mx-2  py-8  shadow-gray-200 shadow-2xl ">
                         <img src="../images/logo-chrome.svg" className="mb-5" alt=""/>
                         <h1 className="text-2xl font-bold text-blue-950">Add to Chrome</h1>
                         <p className="text-gray-500 mb-12">Minimum version 62</p>
-                        <img src="../images/bg-dots.svg" alt="" className="mb-5" />
+                        <img src="../images/bg-dots.svg" alt="" className="mb-5"/>
                         <a
                             href="#"
                             className="rounded-md px-5 py-3 mr-4 shadow-2xl shadow-blue-200 text-white bg-blue-700 border border-blue-700 hover:text-blue-700 hover:bg-white"
@@ -174,11 +175,12 @@ function App() {
                         </a>
                     </div>
                     {/*  card2  */}
-                    <div className=" flex-1 lg:h-96 lg:mt-10  flex flex-col justify-center items-center rounded-md mx-2   py-8 shadow-gray-200 shadow-2xl ">
+                    <div
+                        className=" flex-1 lg:h-96 lg:mt-10  flex flex-col justify-center items-center rounded-md mx-2   py-8 shadow-gray-200 shadow-2xl ">
                         <img src="../images/logo-firefox.svg" className="mb-5" alt=""/>
                         <h1 className="text-2xl font-bold text-blue-950">Add to Firefox</h1>
                         <p className="text-gray-500 mb-12">Minimum version 55</p>
-                        <img src="../images/bg-dots.svg" alt="" className="mb-5" />
+                        <img src="../images/bg-dots.svg" alt="" className="mb-5"/>
                         <a
                             href="#"
                             className="rounded-md px-5 py-3 mr-4 shadow-2xl shadow-blue-200 text-white bg-blue-700 border border-blue-700 hover:text-blue-700 hover:bg-white"
@@ -187,11 +189,12 @@ function App() {
                         </a>
                     </div>
                     {/*  card3  */}
-                    <div className="flex-1 lg:mt-20 flex flex-col justify-center items-center rounded-md mx-2   py-8 shadow-gray-200 shadow-2xl ">
+                    <div
+                        className="flex-1 lg:mt-20 flex flex-col justify-center items-center rounded-md mx-2   py-8 shadow-gray-200 shadow-2xl ">
                         <img src="../images/logo-opera.svg" className="mb-5" alt=""/>
                         <h1 className="text-2xl font-bold text-blue-950">Add to Opera</h1>
                         <p className="text-gray-500 mb-12">Minimum version 46</p>
-                        <img src="../images/bg-dots.svg" alt="" className="mb-5" />
+                        <img src="../images/bg-dots.svg" alt="" className="mb-5"/>
                         <a
                             href="#"
                             className="rounded-md px-5 py-3 mr-4 shadow-2xl shadow-blue-200 text-white bg-blue-700 border border-blue-700 hover:text-blue-700 hover:bg-white"
@@ -202,8 +205,101 @@ function App() {
                 </div>
 
             </section>
+
+            {/*  FAQ questions  */}
+            <div className="flex flex-col justify-center items-center mb-10">
+                <h1 className="text-4xl text-blue-950 font-bold mb-5">Frequently Asked Questions</h1>
+                <p className="text-center text-gray-700 mb-6">
+                    Here are some of our FAQs. If you have any other questions <br/> you’d like
+                    answered please feel free to email us.
+                </p>
+            </div>
+            <Faq/>
         </div>
+
     );
 }
 
 export default App;
+
+
+function Faq() {
+    const [iv1, setIv1] = useState(false);
+    const [iv2, setIv2] = useState(false);
+    const [iv3, setIv3] = useState(false);
+    const [iv4, setIv4] = useState(false);
+
+    function set1() {
+        setIv1(!iv1);
+    }
+    function set2() {
+        setIv2(!iv2);
+    }
+    function set3() {
+        setIv3(!iv3);
+    }
+    function set4() {
+        setIv4(!iv4);
+    }
+
+    return (
+        <div className="flex flex-col justify-start">
+            <div className="flex flex-col mx-52">
+                <button onClick={set1} className="flex justify-between py-3 border-y-2">
+                    <p className="text-gray-700 text-2xl hover:text-red-500 mr-52">What is a bookmark</p>
+                    <p className="ml-52"> + </p>
+                </button>
+                {iv1 && (
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+                        justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+                    </p>
+                )}
+            </div>
+            <div className="flex flex-col justify-center mx-52">
+                <button onClick={set2} className="flex justify-between py-3 border-y-2">
+                    <p className="text-gray-700 text-2xl hover:text-red-500 mr-52">How can I request a new browser?</p>
+                    <p className="ml-52"> + </p>
+                </button>
+                {iv2 && (
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+                        justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+                    </p>
+                )}
+            </div>
+            <div className="flex flex-col justify-center mx-52">
+                <button onClick={set3} className="flex justify-between py-3 border-y-2">
+                    <p className="text-gray-700 text-2xl hover:text-red-500 mr-52">Is there a mobile app?</p>
+                    <p className="ml-52"> + </p>
+                </button>
+                {iv3 && (
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+                        justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+                    </p>
+                )}
+            </div>
+            <div className="flex flex-col justify-center mx-52">
+                <button onClick={set4} className="flex justify-between py-3 border-y-2">
+                    <p className="text-gray-700 text-2xl hover:text-red-500 mr-52">What about other Chromium
+                        browsers?</p>
+                    <p className="ml-52"> + </p>
+                </button>
+                {iv4 && (
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+                        justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+                    </p>
+                )}
+                <a
+                    href="#"
+                    className="flex justify-center text-center mx-72 my-3  px-5 py-3 shadow-2xl shadow-blue-200 text-white bg-blue-700 border border-blue-700 hover:text-blue-700 hover:bg-white"
+                >
+                    More Info
+                </a>
+            </div>
+
+        </div>
+    );
+}
