@@ -60,7 +60,7 @@ function App() {
 
     return (
         <div>
-            <div className="mx-32 mt-10">
+            <div className="lg:mx-32 mx-10 mt-10">
                 <header className="mb-20">
                     <nav className="flex justify-between items-center">
                         <img src="/images/logo-bookmark.svg" alt=""/>
@@ -79,8 +79,8 @@ function App() {
                 </header>
 
                 {/* Section-1 */}
-                <section className="flex justify-between items-center mb-20">
-                    <div className="flex-1 flex flex-col">
+                <section className="flex  flex-col-reverse lg:text-start text-center lg:flex-row lg:justify-between items-center mb-20">
+                    <div className="lg:flex-1 flex flex-col">
                         <div className="mb-4">
                             <h1 className="text-5xl mb-4 text-blue-950 font-bold">A Simple Bookmark <br/> Manager</h1>
                             <p className="text-gray-600">
@@ -89,7 +89,7 @@ function App() {
                                 tab and see your sites load <br/> instantly. Try it for free.
                             </p>
                         </div>
-                        <div className="flex">
+                        <div className="flex lg:justify-start justify-center">
                             <a
                                 href="#"
                                 className="px-5 py-3 mr-4 rounded-md shadow-2xl shadow-blue-200 text-white bg-blue-700 border border-blue-700 hover:text-blue-700 hover:bg-white"
@@ -105,13 +105,13 @@ function App() {
                         </div>
                     </div>
 
-                    <div className="flex-1">
+                    <div className="lg:flex-1">
                         <img src="/images/illustration-hero.svg" alt=""/>
                     </div>
                 </section>
 
                 {/* Section 2 features */}
-                <section className="mb-32">
+                <section className="lg:mb-32 flex flex-col">
                     <div className="flex flex-col justify-center items-center ">
                         <h1 className="text-4xl text-blue-950 font-bold mb-5">Features</h1>
                         <p className="text-center text-gray-700 mb-6">
@@ -119,41 +119,41 @@ function App() {
                             bookmarks sync between your devices <br/> so you can access them on the go.
                         </p>
                     </div>
-                    <div className="flex justify-between items-center mx-52 mb-10">
+                    <div className="flex lg:flex-row flex-col lg:justify-between items-center lg:mx-52 mb-10">
                         <button
                             onClick={state1}
-                            className={`flex-1 text-center px-5 py-3 rounded-md hover:text-red-500 ${
-                                state === 1 ? 'border-b-4 rounded-md border-red-500' : ''
+                            className={`lg:flex-1 text-center px-5 py-3 hover:text-red-500 ${
+                                state === 1 ? 'border-b-4  border-red-500' : ''
                             }`}
                         >
                             Simple Bookmarking
                         </button>
                         <button
                             onClick={state2}
-                            className={`flex-1 text-center px-5 py-3 rounded-md hover:text-red-500 ${
-                                state === 2 ? 'border-b-4 rounded-md border-red-500' : ''
+                            className={`flex-1 text-center px-5 py-3  hover:text-red-500 ${
+                                state === 2 ? 'border-b-4  border-red-500' : ''
                             }`}
                         >
                             Speedy Searching
                         </button>
                         <button
                             onClick={state3}
-                            className={`flex-1 text-center px-5 rounded-md py-3 hover:text-red-500 ${
-                                state === 3 ? 'border-b-4 rounded-md border-red-500' : ''
+                            className={`flex-1 text-center px-5  py-3 hover:text-red-500 ${
+                                state === 3 ? 'border-b-4  border-red-500' : ''
                             }`}
                         >
                             Easy Sharing
                         </button>
                     </div>
 
-                    <div className="flex justify-between items-center mx-32 mb-20">
-                        <img className="flex-1 mx-10" width="200px" src={img} alt=""/>
-                        <div className="flex-1 mx-10">
-                            <h2 className="text-4xl font-bold my-5 text-blue-950">{header}</h2>
-                            <p className="text-gray-600 my-5 mb-5">{p}</p>
+                    <div className="flex lg:flex-row flex-col justify-center lg:justify-between items-center lg:mx-32 mb-20">
+                        <img className="lg:flex-1 lg:mx-10" width="200px" src={img} alt=""/>
+                        <div className="lg:flex-1 lg:mx-10">
+                            <h2 className="text-4xl font-bold  text-center lg:text-start text-blue-950">{header}</h2>
+                            <p className="text-gray-600 my-5 mb-5 text-center lg:text-start">{p}</p>
                             <a
                                 href="#"
-                                className="px-5 rounded-md py-3 mr-4 shadow-2xl shadow-blue-200 text-white bg-blue-700 border border-blue-700 hover:text-blue-700 hover:bg-white"
+                                className="flex  justify-center px-5 rounded-md py-3 lg:mr-4 shadow-2xl shadow-blue-200 text-white bg-blue-700 border border-blue-700 hover:text-blue-700 hover:bg-white"
                             >
                                 More Info
                             </a>
@@ -162,16 +162,16 @@ function App() {
                 </section>
 
                 {/*  section-3  */}
-                <section className="mb-32">
+                <section className="mb-32 flex flex-col justify-center">
                     <div className="flex flex-col justify-center items-center ">
-                        <h1 className="text-4xl text-blue-950 font-bold mb-5">Download the extension</h1>
+                        <h1 className="text-4xl text-blue-950 font-bold mb-5 lg:text-start text-center">Download the extension</h1>
                         <p className="text-center text-gray-700 mb-6">
                             We’ve got more browsers in the pipeline. Please do let us know if <br/> you’ve
                             got a favourite you’d like us to prioritize.
                         </p>
                     </div>
                     {/*card container*/}
-                    <div className="flex mx-48">
+                    <div className="flex lg:flex-row flex-col lg:mx-48">
                         {/*  card1  */}
                         <div
                             className="flex-1 lg:h-2/3 flex flex-col justify-center items-center rounded-md mx-2  py-8  shadow-gray-200 shadow-2xl ">
@@ -219,7 +219,7 @@ function App() {
                 </section>
 
                 {/*  FAQ questions  */}
-                <div className="flex flex-col justify-center items-center mb-10">
+                <div className="flex flex-col justify-center lg:text-start text-center items-center mb-10">
                     <h1 className="text-4xl text-blue-950 font-bold mb-5">Frequently Asked Questions</h1>
                     <p className="text-center text-gray-700 mb-6">
                         Here are some of our FAQs. If you have any other questions <br/> you’d like
@@ -230,7 +230,7 @@ function App() {
             </div>
 
             <section className="bg-blue-700 text-white flex flex-col justify-center items-center py-20 ">
-                <div className="flex justify-center text-center flex-col ">
+                <div className="flex justify-center lg:mx-0 mx-10 text-center flex-col ">
                     <h3 className="text-2xl font-light tracking-wider">35,000+ ALREADY JOINED</h3>
                     <h1 className="text-4xl tracking-wide font-bold mb-10">Stay up-to-date with what <br/> we’re doing</h1>
                 </div>
@@ -295,11 +295,11 @@ function Faq() {
     }
 
     return (
-        <div className="flex flex-col justify-start">
-            <div className="flex flex-col mx-52">
-                <button onClick={set1} className="flex justify-between py-3 border-y-2">
-                <p className="text-gray-700 text-2xl hover:text-red-500 mr-52">What is a bookmark</p>
-                    <p className="ml-52"> + </p>
+        <div className="flex flex-col justify-start ">
+            <div className="flex flex-col lg:text-start  lg:mx-52">
+                <button onClick={set1} className="flex lg:justify-between py-3 border-y-2">
+                <p className=" text-gray-700 text-2xl hover:text-red-500 lg:mr-52">What is a bookmark</p>
+                    <p className="ml-52 lg:block hidden"> + </p>
                 </button>
                 {iv1 && (
                     <p>
@@ -308,10 +308,10 @@ function Faq() {
                     </p>
                 )}
             </div>
-            <div className="flex flex-col justify-center mx-52">
+            <div className="flex flex-col justify-center lg:mx-52">
                 <button onClick={set2} className="flex justify-between py-3 border-y-2">
                     <p className="text-gray-700 text-2xl hover:text-red-500 mr-52">How can I request a new browser?</p>
-                    <p className="ml-52"> + </p>
+                    <p className="ml-52 lg:block hidden"> + </p>
                 </button>
                 {iv2 && (
                     <p>
@@ -320,10 +320,10 @@ function Faq() {
                     </p>
                 )}
             </div>
-            <div className="flex flex-col justify-center mx-52">
+            <div className="flex flex-col justify-center lg:mx-52">
                 <button onClick={set3} className="flex justify-between py-3 border-y-2">
                     <p className="text-gray-700 text-2xl hover:text-red-500 mr-52">Is there a mobile app?</p>
-                    <p className="ml-52"> + </p>
+                    <p className="ml-52 lg:block hidden"> + </p>
                 </button>
                 {iv3 && (
                     <p>
@@ -332,11 +332,11 @@ function Faq() {
                     </p>
                 )}
             </div>
-            <div className="flex flex-col justify-center mx-52">
+            <div className="flex flex-col justify-center lg:mx-52">
                 <button onClick={set4} className="flex justify-between py-3 border-y-2">
                     <p className="text-gray-700 text-2xl hover:text-red-500 mr-52">What about other Chromium
                         browsers?</p>
-                    <p className="ml-52"> + </p>
+                    <p className="ml-52 lg:block hidden"> + </p>
                 </button>
                 {iv4 && (
                     <p>
@@ -346,7 +346,7 @@ function Faq() {
                 )}
                 <a
                     href="#"
-                    className="flex justify-center text-center mx-72 my-3  px-5 py-3  text-white bg-blue-700 border border-blue-700 hover:text-blue-700 hover:bg-white"
+                    className="flex justify-center text-center lg:mx-72 my-3  px-5 py-3  text-white bg-blue-700 border border-blue-700 hover:text-blue-700 hover:bg-white"
                 >
                     More Info
                 </a>
