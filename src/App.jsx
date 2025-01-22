@@ -247,21 +247,22 @@ function App() {
                         onClick={handleClick} className=" mx-1 px-5 py-3 rounded-md text-white bg-red-500 border shadow-2xl border-red-500 hover:text-red-500 hover:bg-white" type="submit" value="Contact us"/>
                 </form>
             </section>
-            <footer className="  bg-blue-950 py-5">
-                <div className="flex justify-between mx-32">
-                    <div className="flex ">
+            <footer className="flex lg:flex-row flex-col lg:justify-between   bg-blue-950 py-5">
+                <div className="flex lg:flex-row flex-col justify-center mx-32">
+                    <div className="flex lg:flex-row flex-col lg:mb-0 mb-2">
                         <img src="/images/logo-bookmark-l.svg" className="pr-5 " alt=""/>
-                        <ul className="inline-flex items-center text-white">
+                        <ul className="inline-flex lg:flex-row flex-col items-center text-white">
                             <a href="#" className="px-5 tracking-wider">FEATURES</a>
                             <a href="#" className="px-5 tracking-wider">PRICING</a>
                             <a href="#" className="px-5 tracking-wider">CONTACT</a>
 
                         </ul>
                     </div>
-                    <div className="flex justify-end">
-                        <img className="mx-1" src="/images/icon-facebook.svg" alt=""/>
-                        <img className="mx-1" src="/images/icon-twitter.svg" alt=""/>
-                    </div>
+
+                </div>
+                <div className="flex mx-32  justify-center">
+                    <img className="mx-1" src="/images/icon-facebook.svg" alt=""/>
+                    <img className="mx-1" src="/images/icon-twitter.svg" alt=""/>
                 </div>
             </footer>
         </div>
