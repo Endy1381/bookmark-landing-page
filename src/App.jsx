@@ -6,9 +6,9 @@ function App() {
     let [state, setState] = useState(1);
 
 
-    let img1 = '/images/illustration-features-tab-1.svg';
-    let img2 = '/images/illustration-features-tab-2.svg';
-    let img3 = '/images/illustration-features-tab-3.svg';
+    let img1 = '/illustration-features-tab-1.svg';
+    let img2 = '/illustration-features-tab-2.svg';
+    let img3 = '/illustration-features-tab-3.svg';
     let img;
     let header
     let p
@@ -71,7 +71,7 @@ function App() {
                 <div className="mx-10">
                     <header className=" py-5 mb-20">
                         <div className="flex justify-between items-center">
-                            <img src="/images/logo-bookmark-inverted.svg" alt=""/>
+                            <img src="/logo-bookmark-inverted.svg" alt=""/>
                             <button onClick={inverseNav} className="text-2xl text-white">X</button>
                         </div>
                     </header>
@@ -84,8 +84,8 @@ function App() {
                 </div>
                 <footer>
                     <div className="flex mx-32 mt-32  justify-center">
-                        <img className="mx-1" src="/images/icon-facebook.svg" alt=""/>
-                        <img className="mx-1" src="/images/icon-twitter.svg" alt=""/>
+                        <img className="mx-1" src="/icon-facebook.svg" alt=""/>
+                        <img className="mx-1" src="/icon-twitter.svg" alt=""/>
                     </div>
                 </footer>
             </div>}
@@ -95,7 +95,7 @@ function App() {
                 <div className="lg:mx-32 mx-10 mt-10 ">
                     <header className="mb-20">
                         <nav className="flex justify-between items-center">
-                            <img src="/images/logo-bookmark.svg" alt=""/>
+                            <img src="/logo-bookmark.svg" alt=""/>
 
                             <ul className="lg:inline-flex hidden items-center ">
                                 <a href="#" className="px-5 text-blue-950 hover:text-red-900">FEATURES</a>
@@ -108,7 +108,7 @@ function App() {
                                     LOGIN
                                 </a>
                             </ul>
-                            <button onClick={toggleNava} className="lg:hidden block"><img src="/images/icon-hamburger.svg" alt=""/></button>
+                            <button onClick={toggleNava} className="lg:hidden block"><img src="/icon-hamburger.svg" alt=""/></button>
                         </nav>
 
 
@@ -144,7 +144,7 @@ function App() {
                         </div>
 
                         <div className="lg:flex-1">
-                            <img src="/images/illustration-hero.svg" alt=""/>
+                            <img src="/illustration-hero.svg" alt=""/>
                         </div>
                     </section>
 
@@ -216,7 +216,7 @@ function App() {
                             {/*  card1  */}
                             <div
                                 className="flex-1 lg:h-2/3 flex flex-col justify-center items-center rounded-md mx-2  py-8  shadow-gray-200 shadow-2xl ">
-                                <img src="../images/logo-chrome.svg" className="mb-5" alt=""/>
+                                <img src="/logo-chrome.svg" className="mb-5" alt=""/>
                                 <h1 className="text-2xl font-bold text-blue-950">Add to Chrome</h1>
                                 <p className="text-gray-500 mb-12">Minimum version 62</p>
                                 <img src="../images/bg-dots.svg" alt="" className="mb-5"/>
@@ -230,7 +230,7 @@ function App() {
                             {/*  card2  */}
                             <div
                                 className=" flex-1 lg:h-96 lg:mt-10  flex flex-col justify-center items-center rounded-md mx-2   py-8 shadow-gray-200 shadow-2xl ">
-                                <img src="../images/logo-firefox.svg" className="mb-5" alt=""/>
+                                <img src="/logo-firefox.svg" className="mb-5" alt=""/>
                                 <h1 className="text-2xl font-bold text-blue-950">Add to Firefox</h1>
                                 <p className="text-gray-500 mb-12">Minimum version 55</p>
                                 <img src="../images/bg-dots.svg" alt="" className="mb-5"/>
@@ -244,7 +244,7 @@ function App() {
                             {/*  card3  */}
                             <div
                                 className="flex-1 lg:mt-20 flex flex-col justify-center items-center rounded-md mx-2   py-8 shadow-gray-200 shadow-2xl ">
-                                <img src="../images/logo-opera.svg" className="mb-5" alt=""/>
+                                <img src="/logo-opera.svg" className="mb-5" alt=""/>
                                 <h1 className="text-2xl font-bold text-blue-950">Add to Opera</h1>
                                 <p className="text-gray-500 mb-12">Minimum version 46</p>
                                 <img src="../images/bg-dots.svg" alt="" className="mb-5"/>
@@ -294,7 +294,7 @@ function App() {
                 <footer className="flex lg:flex-row flex-col lg:justify-between   bg-blue-950 py-5">
                     <div className="flex lg:flex-row flex-col justify-center mx-32">
                         <div className="flex lg:flex-row flex-col lg:mb-0 mb-2">
-                            <img src="/images/logo-bookmark-l.svg" className="pr-5 " alt=""/>
+                            <img src="/logo-bookmark-l.svg" className="pr-5 " alt=""/>
                             <ul className="inline-flex lg:flex-row flex-col items-center text-white">
                                 <a href="#" className="px-5 tracking-wider">FEATURES</a>
                                 <a href="#" className="px-5 tracking-wider">PRICING</a>
@@ -305,8 +305,8 @@ function App() {
 
                     </div>
                     <div className="flex mx-32  justify-center">
-                        <img className="mx-1" src="/images/icon-facebook.svg" alt=""/>
-                        <img className="mx-1" src="/images/icon-twitter.svg" alt=""/>
+                        <img className="mx-1" src="/icon-facebook.svg" alt=""/>
+                        <img className="mx-1" src="/icon-twitter.svg" alt=""/>
                     </div>
                 </footer>
             </div>}
