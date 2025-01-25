@@ -343,9 +343,9 @@ function Faq() {
     }
 
     return (
-        <div className="flex flex-col justify-start ">
+        <div className="flex flex-col lg:justify-start ">
             <div className="flex flex-col lg:text-start   lg:mx-52">
-                <button onClick={set1} className="flex lg:justify-between py-3 border-y-2">
+                <button onClick={set1} className="lg:flex lg:justify-between py-3 border-y-2">
                     <p className=" text-gray-700 text-2xl hover:text-red-500 lg:mr-52">What is a bookmark</p>
                     <p className="ml-52 lg:block hidden"> + </p>
                 </button>
@@ -356,9 +356,9 @@ function Faq() {
                     </p>
                 )}
             </div>
-            <div className="flex flex-col justify-center lg:mx-52">
-                <button onClick={set2} className="flex justify-between py-3 border-y-2">
-                    <p className="text-gray-700 text-2xl hover:text-red-500 mr-52">How can I request a new browser?</p>
+            <div className="flex flex-col lg:text-start   lg:mx-52">
+                <button onClick={set2} className="lg:flex lg:justify-between py-3 border-y-2">
+                    <p className="text-gray-700 text-2xl hover:text-red-500 lg:mr-52">How can I request a new browser?</p>
                     <p className="ml-52 lg:block hidden"> + </p>
                 </button>
                 {iv2 && (
@@ -368,9 +368,9 @@ function Faq() {
                     </p>
                 )}
             </div>
-            <div className="flex flex-col justify-center  lg:mx-52">
-                <button onClick={set3} className="flex justify-between py-3 border-y-2">
-                    <p className="text-gray-700 text-2xl hover:text-red-500 mr-52">Is there a mobile app?</p>
+            <div className="flex flex-col lg:text-start   lg:mx-52">
+                <button onClick={set3} className="lg:flex lg:justify-between py-3 border-y-2">
+                    <p className="text-gray-700 text-2xl hover:text-red-500 lg:mr-52">Is there a mobile app?</p>
                     <p className="ml-52 lg:block hidden"> + </p>
                 </button>
                 {iv3 && (
@@ -380,9 +380,9 @@ function Faq() {
                     </p>
                 )}
             </div>
-            <div className="flex flex-col justify-center lg:mx-52">
-                <button onClick={set4} className="flex justify-between py-3 border-y-2">
-                    <p className="text-gray-700 text-2xl hover:text-red-500 mr-52">What about other Chromium
+            <div className="flex flex-col lg:text-start   lg:mx-52">
+                <button onClick={set4} className="lg:flex lg:justify-between py-3 border-y-2">
+                    <p className="text-gray-700 text-2xl hover:text-red-500 lg:mr-52">What about other Chromium
                         browsers?</p>
                     <p className="ml-52 lg:block hidden"> + </p>
                 </button>
